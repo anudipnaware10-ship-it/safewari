@@ -13,13 +13,15 @@ public class CorsConfig {
 
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
+
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOriginPatterns(List.of(
+                "https://safewari.onrender.com",
+                "https://*.onrender.com",
                 "http://localhost:5173",
                 "http://127.0.0.1:5173",
-                "http://10.122.145.97:5173",
-                "https://safewari.onrender.com"
+                "http://10.122.145.97:5173"
         ));
 
         configuration.setAllowedMethods(List.of(
@@ -32,6 +34,12 @@ public class CorsConfig {
         ));
 
         configuration.setAllowedHeaders(List.of("*"));
+
+        configuration.setExposedHeaders(List.of(
+                "Authorization",
+                "Content-Type"
+        ));
+
         configuration.setAllowCredentials(true);
 
         UrlBasedCorsConfigurationSource source =
