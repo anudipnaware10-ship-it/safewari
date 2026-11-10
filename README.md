@@ -1,34 +1,40 @@
-# VariMitra Full-Stack Project
+# WariMitra – Digital Companion for the Vitthal Wari Pilgrimage
 
-Open this folder in VS Code. It contains the original Spring Boot backend and the connected React frontend.
+WariMitra is a full-stack digital platform designed to assist pilgrims during the Pandharpur Vitthal Wari pilgrimage.
 
-```text
-vari-mitra-fullstack/
-├── backend/   # Spring Boot Maven project (unchanged Java source)
-└── frontend/  # React + Vite application
+The platform provides essential pilgrimage information, route guidance, Palkhi updates, and emergency assistance to help pilgrims navigate their journey safely.
+
+## Tech Stack
+
+- **Frontend:** React.js, Vite
+- **Backend:** Java 21, Spring Boot
+- **Database:** PostgreSQL
+- **Authentication:** Spring Security, JWT
+- **Deployment:** Render, Docker
+
+## Key Features
+
+- Palkhi location and route updates
+- Pilgrimage schedule and event information
+- Nearby amenities and emergency assistance
+- Crowd alerts and route guidance
+- Secure authentication
+
+## Project Structure
+
+- `backend/` – Spring Boot REST API
+- `frontend/` – React frontend
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/anudipnaware10-ship-it/safewari.git
 ```
 
-## Run locally
+Open the project in VS Code and follow the backend and frontend setup instructions.
 
-Open two VS Code terminals.
+## Project Links
 
-### Terminal 1: backend
-
-```powershell
-cd backend
-mvn spring-boot:run
-```
-
-### Terminal 2: frontend
-
-```powershell
-cd frontend
-npm install
-npm run dev
-```
-
-Open `http://localhost:5173`. The Vite proxy forwards every `/backend/*` request to the Spring Boot server at `http://localhost:8080/*`; for example, the frontend route request `/backend/routes` reaches backend endpoint `/routes`.
-
-Before starting Spring Boot, ensure PostgreSQL is running and that the database configuration in `backend/src/main/resources/application.yaml` is valid for your machine.
-# Varimitra
-# safevari
+- [GitHub Repository](https://github.com/anudipnaware10-ship-it/safewari)
