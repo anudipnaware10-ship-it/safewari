@@ -38,3 +38,5 @@ Open the project in VS Code and follow the backend and frontend setup instructio
 ## Project Links
 
 - [GitHub Repository](https://github.com/anudipnaware10-ship-it/safewari)
+- <img width="1920" height="1080" alt="Screenshot 2026-10-07 211415" src="https://github.com/user-attachments/assets/b3262218-8cee-4e5a-b2ef-3e1f7d404dec" />
+
